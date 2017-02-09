@@ -73,25 +73,25 @@ fieldset[disabled] a.btn {
 //   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 // }
 
-// // Remove all backgrounds
-// .btn-outline-primary {
-//   @include button-outline-variant($btn-primary-bg);
-// }
-// .btn-outline-secondary {
-//   @include button-outline-variant($btn-secondary-border);
-// }
-// .btn-outline-info {
-//   @include button-outline-variant($btn-info-bg);
-// }
-// .btn-outline-success {
-//   @include button-outline-variant($btn-success-bg);
-// }
-// .btn-outline-warning {
-//   @include button-outline-variant($btn-warning-bg);
-// }
-// .btn-outline-danger {
-//   @include button-outline-variant($btn-danger-bg);
-// }
+// Remove all backgrounds
+.btn-outline-primary {
+  @include button-outline-variant($btn-primary-bg);
+}
+.btn-outline-secondary {
+  @include button-outline-variant($btn-secondary-border);
+}
+.btn-outline-info {
+  @include button-outline-variant($btn-info-bg);
+}
+.btn-outline-success {
+  @include button-outline-variant($btn-success-bg);
+}
+.btn-outline-warning {
+  @include button-outline-variant($btn-warning-bg);
+}
+.btn-outline-danger {
+  @include button-outline-variant($btn-danger-bg);
+}
 
 
 //
