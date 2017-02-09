@@ -27,8 +27,8 @@
     // Otherwise undo the iOS default
     border-radius: 0;
   }
-
-  @include box-shadow($input-box-shadow);
+  box-shadow: none;
+  //@include box-shadow($input-box-shadow);
   @include transition($input-transition);
 
   // Unstyle the caret on `<select>`s in IE10+.
@@ -91,6 +91,11 @@ select.form-control {
 //
 // Labels
 //
+
+label {
+  font-size: 12px;
+  color: #aaa;
+}
 
 // For use with horizontal and inline forms, when you need the label text to
 // align with the form controls.
