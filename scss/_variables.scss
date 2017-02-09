@@ -94,11 +94,11 @@
 // Start with assigning color names to specific hex values.
 $white:  #fff !default;
 $black:  #000 !default;
-$red:    #d9534f !default;
+$red:    #e41f00 !default;
 $orange: #f0ad4e !default;
 $yellow: #ffd500 !default;
-$green:  #5cb85c !default;
-$blue:   #0275d8 !default;
+$green:  #6abb12 !default;
+$blue:   #37b6e1 !default;
 $teal:   #5bc0de !default;
 $pink:   #ff5b77 !default;
 $purple: #613d7c !default;
@@ -111,9 +111,9 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue !default;
+$brand-primary:             $red !default;
 $brand-success:             $green !default;
-$brand-info:                $teal !default;
+$brand-info:                $blue !default;
 $brand-warning:             $orange !default;
 $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
@@ -241,7 +241,7 @@ $grid-gutter-widths: (
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
@@ -312,9 +312,9 @@ $list-inline-padding: 5px !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          .25rem !default;
-$border-radius-lg:       .3rem !default;
-$border-radius-sm:       .2rem !default;
+$border-radius:          .13rem !default;
+$border-radius-lg:       .15rem !default;
+$border-radius-sm:       .1rem !default;
 
 $component-active-color: $white !default;
 $component-active-bg:    $brand-primary !default;
@@ -355,19 +355,34 @@ $table-border-color:            $gray-lighter !default;
 
 $btn-padding-x:                  1rem !default;
 $btn-padding-y:                  .5rem !default;
-$btn-line-height:                1.25 !default;
+$btn-line-height:                24px !default; //1.25 !default;
 $btn-font-weight:                $font-weight-normal !default;
-$btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
-$btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
-$btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
+$btn-box-shadow:                 none !default;
+$btn-focus-box-shadow:           none !default;
+$btn-active-box-shadow:          0 2px 4px 0 rgba(155,155,155,.85) !default;
 
 $btn-primary-color:              $white !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
+$btn-primary-color-hv:           $white !default;
+$btn-primary-bg-hv:              #ff4022 !default;
+$btn-primary-border-hv:          #ff4022 !default;
+$btn-primary-color-pr:           $white !default;
+$btn-primary-bg-pr:              #cd1d01 !default;
+$btn-primary-border-pr:          #cd1d01 !default;
 
-$btn-secondary-color:            $gray-dark !default;
+
+
+$btn-secondary-color:            #aaa !default;
 $btn-secondary-bg:               $white !default;
-$btn-secondary-border:           #ccc !default;
+$btn-secondary-border:           #aaa !default;
+$btn-secondary-color-hv:         #aaa !default;
+$btn-secondary-bg-hv:            #f1f1f1 !default;
+$btn-secondary-border-hv:        #aaa !default;
+$btn-secondary-color-pr:         #aaa !default;
+$btn-secondary-bg-pr:            $white !default;
+$btn-secondary-border-pr:        #aaa !default;
+
 
 $btn-info-color:                 $white !default;
 $btn-info-bg:                    $brand-info !default;
@@ -376,6 +391,12 @@ $btn-info-border:                $btn-info-bg !default;
 $btn-success-color:              $white !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $btn-success-bg !default;
+$btn-success-color-hv:           $white !default;
+$btn-success-bg-hv:              #89eb20 !default;
+$btn-success-border-hv:          #89eb20 !default;
+$btn-success-color-pr:           $white !default;
+$btn-success-bg-pr:              #4a830a !default;
+$btn-success-border-pr:          #4a830a !default;
 
 $btn-warning-color:              $white !default;
 $btn-warning-bg:                 $brand-warning !default;

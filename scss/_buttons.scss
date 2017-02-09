@@ -9,6 +9,7 @@
   font-weight: $btn-font-weight;
   line-height: $btn-line-height;
   text-align: center;
+  text-transform: uppercase;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
@@ -29,15 +30,16 @@
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    cursor: $cursor-disabled;
-    opacity: .65;
-    @include box-shadow(none);
+    color: #aaa;
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
   }
 
   &:active,
   &.active {
     background-image: none;
-    @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    box-shadow: $btn-active-box-shadow;
+    //@include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
   }
 }
 
@@ -53,43 +55,43 @@ fieldset[disabled] a.btn {
 //
 
 .btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border, $btn-primary-color-hv, $btn-primary-bg-hv, $btn-primary-border-hv, $btn-primary-color-pr, $btn-primary-bg-pr, $btn-primary-border-pr);
 }
 .btn-secondary {
-  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border, $btn-secondary-color-hv, $btn-secondary-bg-hv, $btn-secondary-border-hv, $btn-secondary-color-pr, $btn-secondary-bg-pr, $btn-secondary-border-pr);
 }
-.btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
-}
+// .btn-info {
+//   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+// }
 .btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border, $btn-success-color-hv, $btn-success-bg-hv, $btn-success-border-hv, $btn-success-color-pr, $btn-success-bg-pr, $btn-success-border-pr);
 }
-.btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
-}
-.btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
-}
+// .btn-warning {
+//   @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+// }
+// .btn-danger {
+//   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+// }
 
-// Remove all backgrounds
-.btn-outline-primary {
-  @include button-outline-variant($btn-primary-bg);
-}
-.btn-outline-secondary {
-  @include button-outline-variant($btn-secondary-border);
-}
-.btn-outline-info {
-  @include button-outline-variant($btn-info-bg);
-}
-.btn-outline-success {
-  @include button-outline-variant($btn-success-bg);
-}
-.btn-outline-warning {
-  @include button-outline-variant($btn-warning-bg);
-}
-.btn-outline-danger {
-  @include button-outline-variant($btn-danger-bg);
-}
+// // Remove all backgrounds
+// .btn-outline-primary {
+//   @include button-outline-variant($btn-primary-bg);
+// }
+// .btn-outline-secondary {
+//   @include button-outline-variant($btn-secondary-border);
+// }
+// .btn-outline-info {
+//   @include button-outline-variant($btn-info-bg);
+// }
+// .btn-outline-success {
+//   @include button-outline-variant($btn-success-bg);
+// }
+// .btn-outline-warning {
+//   @include button-outline-variant($btn-warning-bg);
+// }
+// .btn-outline-danger {
+//   @include button-outline-variant($btn-danger-bg);
+// }
 
 
 //
