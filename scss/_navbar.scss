@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   padding: $navbar-padding-y $navbar-padding-x;
+  font-size: .8rem;
 
   @include media-breakpoint-down(nth(map-keys($grid-breakpoints), 1)) {
     > .container {
@@ -49,6 +50,16 @@
   }
 }
 
+.navbar-brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 2px;
+
+  img {
+    height: 100%;
+  }
+}
+
 
 // Navbar nav
 //
@@ -62,7 +73,9 @@
   list-style: none;
 
   .nav-link {
+    padding-top: .6rem;
     padding-right: 0;
+    padding-bottom: .6rem;
     padding-left: 0;
   }
 }
@@ -153,8 +166,8 @@
           flex-direction: row;
 
           .nav-link {
-            padding-right: .5rem;
-            padding-left: .5rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
           }
         }
 

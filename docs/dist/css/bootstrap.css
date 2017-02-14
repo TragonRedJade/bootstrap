@@ -3763,6 +3763,7 @@ tbody.collapse.show {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0.5rem 1rem;
+  font-size: .8rem;
 }
 
 @media (max-width: 575px) {
@@ -3789,6 +3790,16 @@ tbody.collapse.show {
   text-decoration: none;
 }
 
+.navbar-brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 2px;
+}
+
+.navbar-brand-logo img {
+  height: 100%;
+}
+
 .navbar-nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3805,7 +3816,9 @@ tbody.collapse.show {
 }
 
 .navbar-nav .nav-link {
+  padding-top: .6rem;
   padding-right: 0;
+  padding-bottom: .6rem;
   padding-left: 0;
 }
 
@@ -3886,8 +3899,8 @@ tbody.collapse.show {
             flex-direction: row;
   }
   .navbar-toggleable .navbar-nav .nav-link {
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .navbar-toggleable > .container {
     display: -webkit-box;
@@ -3948,8 +3961,8 @@ tbody.collapse.show {
             flex-direction: row;
   }
   .navbar-toggleable-sm .navbar-nav .nav-link {
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .navbar-toggleable-sm > .container {
     display: -webkit-box;
@@ -4010,8 +4023,8 @@ tbody.collapse.show {
             flex-direction: row;
   }
   .navbar-toggleable-md .navbar-nav .nav-link {
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .navbar-toggleable-md > .container {
     display: -webkit-box;
@@ -4072,8 +4085,8 @@ tbody.collapse.show {
             flex-direction: row;
   }
   .navbar-toggleable-lg .navbar-nav .nav-link {
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .navbar-toggleable-lg > .container {
     display: -webkit-box;
@@ -4134,8 +4147,8 @@ tbody.collapse.show {
 }
 
 .navbar-toggleable-xl .navbar-nav .nav-link {
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .navbar-toggleable-xl > .container {
