@@ -287,3 +287,22 @@
     color: $navbar-inverse-color;
   }
 }
+
+.navbar.navbar-secondary {
+  .navbar-nav {
+    margin: 0 auto;
+    .nav-link {
+      padding-right: 4rem;
+      padding-left: 4rem;
+      color: $white;
+      text-transform: uppercase;
+      opacity: .6;
+    }
+    .nav-link:hover,
+    .nav-link:active,
+    .nav-link.active {
+      opacity: 1;
+    }
+  }
+  background-color: $black;
+}

@@ -93,7 +93,7 @@
 
 // Start with assigning color names to specific hex values.
 $white:  #fff !default;
-$black:  #000 !default;
+$black:  #333239 !default;
 $red:    #e41f00 !default;
 $orange: #f0ad4e !default;
 $yellow: #ffd500 !default;
@@ -250,7 +250,7 @@ $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
 $font-size-xs:   .75rem !default;
 
-$font-weight-normal: normal !default;
+$font-weight-normal: lighter !default;
 $font-weight-bold: bold !default;
 
 $font-weight-base: $font-weight-normal !default;
@@ -444,7 +444,7 @@ $input-border-radius-sm:         $border-radius-sm !default;
 
 $input-bg-focus:                 $input-bg !default;
 $input-border-focus:             lighten($brand-primary, 25%) !default;
-$input-box-shadow-focus:         0 2px 4px 0 rgba(155,155,155,.85) !default;
+$input-box-shadow-focus:         0 0 6px 0 rgba(201,201,201,.85) !default; //0 2px 4px 0 rgba(155,155,155,.85) !default;
 $input-color-focus:              $input-color !default;
 
 $input-color-placeholder:        #aaa !default;

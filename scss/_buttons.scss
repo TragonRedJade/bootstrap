@@ -12,6 +12,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   vertical-align: middle;
+  cursor: pointer;
   user-select: none;
   border: $input-btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius);

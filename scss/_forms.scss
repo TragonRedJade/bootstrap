@@ -8,9 +8,10 @@
   display: block;
   width: 100%;
   // // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  // height: $input-height;
+  height: 45px; //$input-height;
   padding: $input-padding-y $input-padding-x;
   font-size: $font-size-base;
+  font-weight: $font-weight-normal;
   line-height: $input-line-height;
   color: $input-color;
   background-color: $input-bg;
@@ -390,4 +391,8 @@ select.form-control-lg {
       top: 0;
     }
   }
+}
+
+textarea.form-control {
+  height: auto;
 }
