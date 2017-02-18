@@ -2560,7 +2560,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: lighter;
+  font-weight: normal;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
@@ -2860,7 +2860,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-link {
-  font-weight: lighter;
+  font-weight: normal;
   color: #e41f00;
   border-radius: 0;
 }
@@ -3015,7 +3015,7 @@ tbody.collapse.show {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 3px 1.5rem;
+  padding: 0.4rem 0.8rem;
   clear: both;
   font-weight: lighter;
   color: #292b2c;
@@ -3065,7 +3065,7 @@ tbody.collapse.show {
 
 .dropdown-header {
   display: block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.8rem;
   margin-bottom: 0;
   font-size: 0.875rem;
   color: #636c72;
@@ -3339,7 +3339,7 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: lighter;
+  font-weight: normal;
   line-height: 1.25;
   color: #555;
   text-align: center;
@@ -3767,7 +3767,7 @@ tbody.collapse.show {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0.5rem 1rem;
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 @media (max-width: 575px) {
@@ -3795,8 +3795,8 @@ tbody.collapse.show {
 }
 
 .navbar-brand-logo {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 2px;
 }
 
@@ -3824,6 +3824,13 @@ tbody.collapse.show {
   padding-right: 0;
   padding-bottom: .6rem;
   padding-left: 0;
+  font-weight: normal;
+  color: #ababab;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #e41f00;
 }
 
 .navbar-text {
@@ -9001,6 +9008,10 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 .font-weight-normal {
+  font-weight: normal;
+}
+
+.font-weight-lighter {
   font-weight: lighter;
 }
 
