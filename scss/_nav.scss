@@ -26,25 +26,32 @@
   }
 }
 
+.nav-item.disabled .nav-link {
+  color: $nav-disabled-link-color;
+  cursor: $cursor-disabled;
+}
+
 
 //
 // Tabs
 //
 
 .nav-tabs {
-  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+  //border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
 
   .nav-item {
     margin-bottom: -$nav-tabs-border-width;
   }
 
   .nav-link {
-    border: $nav-tabs-border-width solid transparent;
-    @include border-top-radius($nav-tabs-border-radius);
+    font-weight: $font-weight-normal;
+    color: $gray;
+    border: $nav-tabs-border-width solid $red;
+    //@include border-top-radius($nav-tabs-border-radius);
 
-    @include hover-focus {
-      border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
-    }
+    // @include hover-focus {
+    //   border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+    // }
 
     &.disabled {
       color: $nav-disabled-link-color;
@@ -52,12 +59,13 @@
       border-color: transparent;
     }
   }
-
+  .nav-item.active .nav-link,
   .nav-link.active,
   .nav-item.show .nav-link {
-    color: $nav-tabs-active-link-hover-color;
-    background-color: $nav-tabs-active-link-hover-bg;
-    border-color: $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-bg;
+    color: $black;
+    //background-color: $nav-tabs-active-link-hover-bg;
+    //border-color: $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-bg;
+    border-bottom-width: 3px;
   }
 
   .dropdown-menu {
@@ -110,10 +118,16 @@
 // Hide tabbable panes to start, show them when `.active`
 
 .tab-content {
+  padding: 15px 0;
   > .tab-pane {
     display: none;
   }
   > .active {
     display: block;
   }
+}
+
+.tabs-container {
+  padding: 20px;
+  background-color: #fff;
 }

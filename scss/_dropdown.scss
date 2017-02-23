@@ -81,12 +81,12 @@
     background-color: $dropdown-link-hover-bg;
   }
 
-  &.active,
-  &:active {
-    color: $dropdown-link-active-color;
-    text-decoration: none;
-    background-color: $dropdown-link-active-bg;
-  }
+  // &.active,
+  // &:active {
+  //   color: $dropdown-link-active-color;
+  //   text-decoration: none;
+  //   background-color: $dropdown-link-active-bg;
+  // }
 
   &.disabled,
   &:disabled {
