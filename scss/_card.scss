@@ -16,6 +16,7 @@
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
+  border-left: 4px solid $red;
 }
 
 .card-title {
@@ -69,6 +70,21 @@
   &:first-child {
     @include border-radius($card-border-radius-inner $card-border-radius-inner 0 0);
   }
+  &:hover {
+    padding-left: 16px;
+    border-left: 4px solid $gray;
+  }
+  &.active,
+  &.open {
+    padding-left: 16px;
+    border-left: 4px solid $red;
+  }
+}
+
+
+
+.card.card-stacked .card-header {
+  border-bottom: 0;
 }
 
 .card-footer {
@@ -256,6 +272,15 @@
     }
   }
 }
+
+.card-block.in.collapse {
+  display: block;
+}
+
+.card.card-stacked .card-header {
+  border-bottom: 0;
+}
+
 
 
 //
