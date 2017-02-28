@@ -21,7 +21,7 @@
   flex-direction: column;
   padding: $navbar-padding-y $navbar-padding-x;
   font-size: .9rem;
-
+  background: $white;
 
   @include media-breakpoint-down(nth(map-keys($grid-breakpoints), 1)) {
     > .container {
@@ -55,27 +55,28 @@
 // Navbar nav
 //
 // Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
-
-.navbar-nav {
-  display: flex;
-  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-
-  .nav-link {
-    padding-top: .6rem;
-    padding-right: 0;
-    padding-bottom: .6rem;
+.navbar {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
     padding-left: 0;
-    font-weight: $font-weight-normal;
-    color: #ababab;
-  }
-  .nav-link:hover,
-  .nav-link.active {
-    color: $red;
-  }
+    margin-bottom: 0;
+    list-style: none;
 
+    .nav-link {
+      padding-top: .6rem;
+      padding-right: 0;
+      padding-bottom: .6rem;
+      padding-left: 0;
+      font-weight: $font-weight-normal;
+      color: #ababab;
+      cursor: pointer;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: $red;
+    }
+  }
 }
 
 
@@ -287,6 +288,7 @@
 }
 
 .navbar.navbar-secondary {
+  background-color: $black;
   .navbar-nav {
     margin: 0 auto;
     .nav-link {
@@ -302,5 +304,19 @@
       opacity: 1;
     }
   }
-  background-color: $black;
+}
+
+.navbar.navbar-tertiary {
+  padding: 0;
+  background-color: $white;
+  .navbar-nav {
+    margin: 0 auto;
+    .nav-link {
+      padding: 8px 4rem 5px;
+      text-transform: uppercase;
+    }
+    .nav-link.active {
+      border-bottom: 3px solid $red;
+    }
+  }
 }
