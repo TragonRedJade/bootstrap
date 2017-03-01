@@ -19,7 +19,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: $navbar-padding-y $navbar-padding-x;
+  padding: .3rem 1rem; //$navbar-padding-y $navbar-padding-x;
   font-size: .9rem;
   background: $white;
 
@@ -64,6 +64,7 @@
     list-style: none;
 
     .nav-link {
+      position: relative;
       padding-top: .6rem;
       padding-right: 0;
       padding-bottom: .6rem;
@@ -302,6 +303,17 @@
     .nav-link:active,
     .nav-link.active {
       opacity: 1;
+    }
+    .nav-link.active::after {
+      position: absolute;
+      right: 46%;
+      bottom: -5px;
+      width: 0;
+      height: 0;
+      content: "";
+      border-right: 11px solid transparent;
+      border-bottom: 8px solid $white;
+      border-left: 11px solid transparent;
     }
   }
 }
