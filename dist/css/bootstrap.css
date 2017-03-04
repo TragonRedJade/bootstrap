@@ -1964,6 +1964,23 @@ pre code {
   background-color: transparent;
 }
 
+.table tbody tr :first-child {
+  border-left: 4px solid #fff;
+}
+
+.table tbody tr:not(.active):hover :first-child {
+  border-left-color: #aaa;
+}
+
+.table tbody .active :first-child {
+  border-left-color: #e41f00;
+}
+
+.table tbody th,
+.table tbody td {
+  background: #fff;
+}
+
 .table th,
 .table td {
   padding: 0.75rem;
@@ -1972,8 +1989,11 @@ pre code {
 }
 
 .table thead th {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #aaa;
   vertical-align: bottom;
-  border-bottom: 2px solid #f1f1f1;
+  border-top: 0;
 }
 
 .table tbody + tbody {
@@ -2717,7 +2737,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 27px;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;

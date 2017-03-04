@@ -8,6 +8,28 @@
   margin-bottom: $spacer;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
 
+  tbody {
+    tr {
+      :first-child {
+        border-left: 4px solid $white;
+      }
+    }
+    tr:not(.active):hover {
+      :first-child {
+        border-left-color: $gray;
+      }
+    }
+    .active {
+      :first-child {
+        border-left-color: $red;
+      }
+    }
+    th,
+    td {
+      background: $white;
+    }
+  }
+
   th,
   td {
     padding: $table-cell-padding;
@@ -16,8 +38,12 @@
   }
 
   thead th {
+    font-size: 14px;
+    font-weight: $font-weight-lighter;
+    color: $gray;
     vertical-align: bottom;
-    border-bottom: (2 * $table-border-width) solid $table-border-color;
+    border-top: 0;
+    //border-bottom: (2 * $table-border-width) solid $table-border-color;
   }
 
   tbody + tbody {
