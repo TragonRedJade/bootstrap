@@ -67,6 +67,9 @@ fieldset[disabled] a.btn {
 .btn-success {
   @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border, $btn-success-color-hv, $btn-success-bg-hv, $btn-success-border-hv, $btn-success-color-pr, $btn-success-bg-pr, $btn-success-border-pr);
 }
+.btn-inverse {
+  @include button-variant($btn-inverse-color, $btn-inverse-bg, $btn-inverse-border, $btn-inverse-color-hv, $btn-inverse-bg-hv, $btn-inverse-border-hv, $btn-inverse-color-pr, $btn-inverse-bg-pr, $btn-inverse-border-pr);
+}
 // .btn-warning {
 //   @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
 // }

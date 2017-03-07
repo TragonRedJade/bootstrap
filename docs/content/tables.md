@@ -24,26 +24,33 @@ Using the most basic table markup, here's how `.table`-based tables look in Boot
       <th>First Name</th>
       <th>Last Name</th>
       <th>Username</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
+      <td scope="row">1</td>
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
+      <td></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <td scope="row">2</td>
       <td>Jacob</td>
       <td>Thornton</td>
       <td>@fat</td>
+      <td></td>
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <td scope="row">3</td>
       <td>Larry</td>
       <td>the Bird</td>
       <td>@twitter</td>
+      <td class="actions">
+        <button class="btn btn-primary">I</button>
+        <button class="btn btn-inverse">J</button>
+      </td>
     </tr>
   </tbody>
 </table>

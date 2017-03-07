@@ -10,23 +10,32 @@
 
   tbody {
     tr {
-      :first-child {
+      td:first-child {
         border-left: 4px solid $white;
       }
     }
     tr:not(.active):hover {
-      :first-child {
+      td:first-child {
         border-left-color: $gray;
       }
     }
     .active {
-      :first-child {
+      td:first-child {
         border-left-color: $red;
       }
     }
     th,
     td {
       background: $white;
+    }
+  }
+  tr {
+    .actions {
+      padding: 0;
+      button {
+        float: right;
+        border-radius: 0;
+      }
     }
   }
 

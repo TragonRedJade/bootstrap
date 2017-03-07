@@ -444,9 +444,9 @@ textarea.form-control {
     width: 17px;
     height: 17px;
     &:checked + .input-helper {
-      &::before {
-        background-color: #aaa;
-      }
+      // &::before {
+      //   background-color: #aaa;
+      // }
       &::after {
         filter: alpha(opacity = 100);
         opacity: 1;
@@ -461,9 +461,9 @@ textarea.form-control {
       height: 17px;
     }
     &::after {
-      top: 5px;
-      left: 1px;
-      width: 15px;
+      top: 6px;
+      left: 3px;
+      width: 12px;
       height: 7px;
       filter: alpha(opacity = 0);
       border-bottom: 2px solid #696969;
@@ -532,7 +532,6 @@ textarea.form-control {
       top: 2px;
       width: 19px;
       height: 19px;
-      background: #aaa;
       border-radius: 50%;
     }
     &::after {
@@ -540,7 +539,7 @@ textarea.form-control {
       left: 4px;
       width: 11px;
       height: 11px;
-      background: #696969;
+      background: #aaa;
       border-radius: 50%;
       transform: scale(0);
     }

@@ -290,14 +290,29 @@
 
 .navbar.navbar-secondary {
   background-color: $black;
+  .section-title {
+    position: absolute;
+    left: 20px;
+    font-size: 1.1rem;
+    color: $white;
+  }
+
   .navbar-nav {
-    margin: 0 auto;
+    &.center {
+      margin: 0 auto;
+    }
     .nav-link {
       padding-right: 4rem;
       padding-left: 4rem;
       color: $white;
       text-transform: uppercase;
       opacity: .6;
+    }
+    .btn-sm {
+      position: absolute;
+      top: 6px;
+      right: 20px;
+      box-shadow: none;
     }
     .nav-link:hover,
     .nav-link:active,
@@ -306,7 +321,7 @@
     }
     .nav-link.active::after {
       position: absolute;
-      right: 46%;
+      right: 44%;
       bottom: -5px;
       width: 0;
       height: 0;
@@ -324,7 +339,7 @@
   .navbar-nav {
     margin: 0 auto;
     .nav-link {
-      padding: 8px 4rem 5px;
+      padding: 9px 4rem 2px;
       text-transform: uppercase;
     }
     .nav-link.active {
