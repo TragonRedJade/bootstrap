@@ -4,6 +4,14 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
 @media print {
   *,
   *::before,
@@ -265,8 +273,8 @@ table {
 }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #ccc;
   text-align: left;
   caption-side: bottom;
@@ -1965,15 +1973,18 @@ pre code {
 }
 
 .table tbody tr td:first-child {
-  border-left: 4px solid #fff;
+  padding-left: 18px;
+  border-left: 0;
 }
 
 .table tbody tr:not(.active):hover td:first-child {
-  border-left-color: #aaa;
+  padding-left: 16px;
+  border-left: 4px solid #aaa;
 }
 
 .table tbody .active td:first-child {
-  border-left-color: #e41f00;
+  padding-left: 16px;
+  border-left: 4px solid #e41f00;
 }
 
 .table tbody th,
@@ -1981,20 +1992,11 @@ pre code {
   background: #fff;
 }
 
-.table tr .actions {
-  padding: 0;
-}
-
-.table tr .actions button {
-  float: right;
-  border-radius: 0;
-}
-
 .table th,
 .table td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #f1f1f1;
+  padding: 1rem;
+  vertical-align: middle;
+  border-top: 2px solid #f1f1f1;
 }
 
 .table thead th {
@@ -2006,11 +2008,22 @@ pre code {
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #f1f1f1;
+  border-top: 4px solid #f1f1f1;
 }
 
 .table .table {
   background-color: #fff;
+}
+
+.table tr .actions {
+  padding: 0;
+  clear: both;
+}
+
+.table tr .actions .btn {
+  float: right;
+  padding: .8rem 1rem;
+  border-radius: 0;
 }
 
 .table-sm th,
@@ -2019,17 +2032,17 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #f1f1f1;
+  border: 2px solid #f1f1f1;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #f1f1f1;
+  border: 2px solid #f1f1f1;
 }
 
 .table-bordered thead th,
 .table-bordered thead td {
-  border-bottom-width: 2px;
+  border-bottom-width: 4px;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
