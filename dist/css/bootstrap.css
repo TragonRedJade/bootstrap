@@ -4490,6 +4490,7 @@ tbody.collapse.show {
   position: absolute;
   left: 20px;
   font-size: 1.1rem;
+  font-weight: normal;
   color: #fff;
 }
 
