@@ -16,6 +16,10 @@
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
+}
+
+// for accordian style stacked cards
+.card-block.in {
   border-left: 4px solid $red;
 }
 

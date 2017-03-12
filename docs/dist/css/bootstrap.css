@@ -2026,6 +2026,10 @@ pre code {
   border-radius: 0;
 }
 
+.table tr.danger td {
+  background-color: #f2dede;
+}
+
 .table-sm th,
 .table-sm td {
   padding: 0.3rem;
@@ -2755,6 +2759,7 @@ textarea.form-control {
   display: inline-block;
   font-weight: normal;
   line-height: 27px;
+  color: inherit;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -4050,6 +4055,7 @@ tbody.collapse.show {
 }
 
 .navbar-toggler {
+  z-index: 1;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
@@ -4058,6 +4064,7 @@ tbody.collapse.show {
   line-height: 1;
   background: transparent;
   border: 1px solid transparent;
+  outline: none;
   border-radius: 0.13rem;
 }
 
@@ -4483,6 +4490,7 @@ tbody.collapse.show {
 }
 
 .navbar.navbar-secondary {
+  min-height: 35px;
   background-color: #333239;
 }
 
@@ -4503,6 +4511,7 @@ tbody.collapse.show {
   padding-left: 4rem;
   color: #fff;
   text-transform: uppercase;
+  outline: none;
   opacity: .6;
 }
 
@@ -4532,7 +4541,14 @@ tbody.collapse.show {
   border-left: 11px solid transparent;
 }
 
+@media (max-width: 991px) {
+  .navbar-secondary .nav-link.active::after {
+    display: none !important;
+  }
+}
+
 .navbar.navbar-tertiary {
+  min-height: 35px;
   padding: 0;
   background-color: #fff;
 }
@@ -4544,10 +4560,17 @@ tbody.collapse.show {
 .navbar.navbar-tertiary .navbar-nav .nav-link {
   padding: 9px 4rem 2px;
   text-transform: uppercase;
+  outline: none;
 }
 
 .navbar.navbar-tertiary .navbar-nav .nav-link.active {
   border-bottom: 3px solid #e41f00;
+}
+
+@media (max-width: 991px) {
+  .navbar-tertiary .navbar-nav .nav-link.active {
+    border-bottom: 0 !important;
+  }
 }
 
 .card {
@@ -4572,6 +4595,9 @@ tbody.collapse.show {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding: 20px;
+}
+
+.card-block.in {
   border-left: 4px solid #e41f00;
 }
 
@@ -5708,20 +5734,20 @@ button.close {
   }
 }
 
-.modal.alert .modal-content .modal-header {
+.modal.alert-box .modal-content .modal-header {
   border-bottom: 0;
 }
 
-.modal.alert .modal-content .modal-header .modal-title {
+.modal.alert-box .modal-content .modal-header .modal-title {
   margin: 0 auto;
   color: #e41f00;
 }
 
-.modal.alert .modal-content .modal-body {
+.modal.alert-box .modal-content .modal-body {
   text-align: center;
 }
 
-.modal.alert .modal-content .modal-footer {
+.modal.alert-box .modal-content .modal-footer {
   display: block;
   text-align: center;
   border-top: 0;

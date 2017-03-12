@@ -8,6 +8,8 @@
   margin-bottom: $spacer;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
 
+
+  // left border styles (RedJade specific)
   tbody {
     tr {
       td:first-child {
@@ -59,6 +61,7 @@
   }
 }
 
+// RedJade buttons style for far right table columns
 .table tr {
   .actions {
     padding: 0;
@@ -70,6 +73,19 @@
     }
   }
 }
+
+
+.table {
+  tr {
+    &.danger {
+      td {
+        background-color: $state-danger-bg;
+      }
+    }
+  }
+}
+
+
 
 //
 // Condensed table w/ half padding
