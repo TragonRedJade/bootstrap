@@ -53,3 +53,9 @@
 .alert-danger {
   @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
 }
+
+td {
+  .alert {
+    padding: 5px 8px;
+  }
+}
