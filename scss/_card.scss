@@ -86,11 +86,6 @@
 }
 
 
-
-.card.card-stacked .card-header {
-  border-bottom: 0;
-}
-
 .card-footer {
   padding: $card-spacer-y $card-spacer-x;
   background-color: $card-cap-bg;
@@ -277,15 +272,21 @@
   }
 }
 
-.card-block.in.collapse {
-  display: block;
+
+.card.card-stacked {
+  .card-header {
+    border-bottom: 0;
+  }
+  .card-block {
+    border-left: 4px solid $white;
+    &.in.collapse {
+      display: block;
+    }
+    &.in {
+      border-left-color: $red;
+    }
+  }
 }
-
-.card.card-stacked .card-header {
-  border-bottom: 0;
-}
-
-
 
 //
 // Columns

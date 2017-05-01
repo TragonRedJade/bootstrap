@@ -191,7 +191,7 @@ $body-color:    #555 !default;
 $link-color:            $brand-primary !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 15%) !default;
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 // Grid breakpoints
@@ -802,7 +802,7 @@ $badge-pill-border-radius:    10rem !default;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding:         15px !default;
+$modal-inner-padding:         20px !default;
 
 $modal-dialog-margin:         10px !default;
 $modal-dialog-sm-up-margin-y: 30px !default;
@@ -914,13 +914,13 @@ $figure-caption-color:     $gray-light !default;
 
 // Breadcrumbs
 
-$breadcrumb-padding-y:          .75rem !default;
-$breadcrumb-padding-x:          1rem !default;
+$breadcrumb-padding-y:          0 !default;
+$breadcrumb-padding-x:          0 !default;
 $breadcrumb-item-padding:       .5rem !default;
 
-$breadcrumb-bg:                 $gray-lighter !default;
-$breadcrumb-divider-color:      $gray-light !default;
-$breadcrumb-active-color:       $gray-light !default;
+$breadcrumb-bg:                 transparent !default;
+$breadcrumb-divider-color:      $gray !default;
+$breadcrumb-active-color:       $gray !default;
 $breadcrumb-divider:            "/" !default;
 
 

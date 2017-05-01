@@ -403,7 +403,8 @@ textarea.form-control {
 
 .checkbox label, .radio label, label.radio, label.checkbox {
   position: relative;
-  padding-left: 10px;
+  padding-right: 25px;
+  padding-left: 5px;
   font-size: 1rem;
   color: #2b2b2b;
 }
@@ -430,7 +431,7 @@ textarea.form-control {
 .checkbox .input-helper::before, .radio .input-helper::before {
   left: 0;
   background: transparent;
-  border: 2px solid #aaa;
+  border: 1px solid #777;
   border-radius: 1px;
 }
 
