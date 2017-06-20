@@ -275,7 +275,7 @@ table {
 caption {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: #ccc;
+  color: #aaa;
   text-align: left;
   caption-side: bottom;
 }
@@ -367,7 +367,7 @@ legend {
   max-width: 100%;
   padding: 0;
   margin-bottom: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: inherit;
   color: inherit;
   white-space: normal;
@@ -479,7 +479,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(51, 50, 57, 0.1);
+  border-top: 1px solid #ccc;
 }
 
 small,
@@ -521,7 +521,7 @@ mark,
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  border-left: 0.25rem solid #f1f1f1;
+  border-left: 0.25rem solid #e9e5e5;
 }
 
 .blockquote-footer {
@@ -538,7 +538,7 @@ mark,
   padding-right: 1rem;
   padding-left: 0;
   text-align: right;
-  border-right: 0.25rem solid #f1f1f1;
+  border-right: 0.25rem solid #e9e5e5;
   border-left: 0;
 }
 
@@ -1936,7 +1936,7 @@ mark,
 .table td {
   padding: 1rem;
   vertical-align: middle;
-  border-top: 2px solid #f1f1f1;
+  border-top: 1px solid #e9e5e5;
 }
 
 .table thead th {
@@ -1948,7 +1948,7 @@ mark,
 }
 
 .table tbody + tbody {
-  border-top: 4px solid #f1f1f1;
+  border-top: 2px solid #e9e5e5;
 }
 
 .table .table {
@@ -1976,17 +1976,17 @@ mark,
 }
 
 .table-bordered {
-  border: 2px solid #f1f1f1;
+  border: 1px solid #e9e5e5;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 2px solid #f1f1f1;
+  border: 1px solid #e9e5e5;
 }
 
 .table-bordered thead th,
 .table-bordered thead td {
-  border-bottom-width: 4px;
+  border-bottom-width: 2px;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
@@ -2079,7 +2079,7 @@ mark,
 
 .thead-default th {
   color: #aaa;
-  background-color: #f1f1f1;
+  background-color: #e9e5e5;
 }
 
 .table-inverse {
@@ -2279,7 +2279,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .form-check.disabled .form-check-label {
-  color: #ccc;
+  color: #aaa;
   cursor: not-allowed;
 }
 
@@ -2672,7 +2672,7 @@ textarea.form-control {
 }
 
 .radio .input-helper::before {
-  top: 2px;
+  top: 3px;
   width: 19px;
   height: 19px;
   border-radius: 50%;
@@ -2680,9 +2680,9 @@ textarea.form-control {
 
 .radio .input-helper::after {
   top: 6px;
-  left: 4px;
-  width: 11px;
-  height: 11px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
   background: #aaa;
   border-radius: 50%;
   -webkit-transform: scale(0);
@@ -2820,8 +2820,8 @@ fieldset[disabled] a.btn {
 
 .btn-inverse {
   color: #fff;
-  background-color: #333239;
-  border-color: #333239;
+  background-color: #7f7f7f;
+  border-color: #7f7f7f;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -3022,6 +3022,36 @@ fieldset[disabled] a.btn {
   border-color: #ff4022;
 }
 
+.btn-outline-inverse {
+  color: #fff;
+  background-image: none;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.btn-outline-inverse:hover {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-inverse:focus, .btn-outline-inverse.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-inverse.disabled, .btn-outline-inverse:disabled {
+  color: #fff;
+  background-color: transparent;
+}
+
+.btn-outline-inverse:active, .btn-outline-inverse.active,
+.show > .btn-outline-inverse.dropdown-toggle {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+}
+
 .btn-link {
   font-weight: normal;
   color: #e41f00;
@@ -3172,7 +3202,7 @@ tbody.collapse.show {
   height: 1px;
   margin: 0.5rem 0;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #e9e5e5;
 }
 
 .dropdown-item {
@@ -3500,7 +3530,7 @@ tbody.collapse.show {
   line-height: 1.1;
   color: #555;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #e9e5e5;
   border: 1px solid #aaa;
   border-radius: 0.13rem;
 }
@@ -4667,6 +4697,7 @@ tbody.collapse.show {
   float: left;
   font-size: 1.1rem;
   font-weight: 500;
+  color: #aaa;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -4686,7 +4717,7 @@ tbody.collapse.show {
 }
 
 .breadcrumb-item.active {
-  color: #aaa;
+  color: inherit;
 }
 
 .breadcrumb-item a {
@@ -4743,7 +4774,7 @@ tbody.collapse.show {
 .page-link:focus, .page-link:hover {
   color: #981500;
   text-decoration: none;
-  background-color: #f1f1f1;
+  background-color: #e9e5e5;
   border-color: #ddd;
 }
 
@@ -4977,7 +5008,7 @@ td .alert {
   font-size: 0.75rem;
   line-height: 1rem;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #e9e5e5;
   border-radius: 0.13rem;
 }
 
@@ -5048,7 +5079,7 @@ td .alert {
 
 .list-group-item-action:active {
   color: #555;
-  background-color: #f1f1f1;
+  background-color: #e9e5e5;
 }
 
 .list-group-item {
@@ -5374,7 +5405,7 @@ button.close {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #e9e5e5;
 }
 
 .modal-title {
@@ -5405,7 +5436,7 @@ button.close {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 20px;
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid #e9e5e5;
 }
 
 .modal-footer > :not(:first-child) {
@@ -8840,11 +8871,11 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 .text-muted {
-  color: #ccc !important;
+  color: #aaa !important;
 }
 
 a.text-muted:focus, a.text-muted:hover {
-  color: #b3b3b3 !important;
+  color: #919191 !important;
 }
 
 .text-primary {

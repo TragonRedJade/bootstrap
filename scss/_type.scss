@@ -54,7 +54,7 @@ hr {
   margin-top: $spacer-y;
   margin-bottom: $spacer-y;
   border: 0;
-  border-top: $hr-border-width solid $hr-border-color;
+  border-top: $hr-border-width solid #ccc; //$hr-border-color;
 }
 
 

@@ -530,16 +530,16 @@ textarea.form-control {
   }
   .input-helper {
     &::before {
-      top: 2px;
+      top: 3px;
       width: 19px;
       height: 19px;
       border-radius: 50%;
     }
     &::after {
       top: 6px;
-      left: 4px;
-      width: 11px;
-      height: 11px;
+      left: 3px;
+      width: 12px;
+      height: 12px;
       background: #aaa;
       border-radius: 50%;
       transform: scale(0);

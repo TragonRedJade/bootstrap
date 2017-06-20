@@ -202,7 +202,7 @@ table {
 caption {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: #ccc;
+  color: #aaa;
   text-align: left;
   caption-side: bottom;
 }
@@ -294,7 +294,7 @@ legend {
   max-width: 100%;
   padding: 0;
   margin-bottom: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: inherit;
   color: inherit;
   white-space: normal;

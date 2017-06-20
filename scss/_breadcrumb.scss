@@ -11,6 +11,7 @@
   float: left;
   font-size: 1.1rem;
   font-weight: 500;
+  color: $breadcrumb-active-color;
 
   // The separator between breadcrumbs (by default, a forward-slash: "/")
   + .breadcrumb-item::before {
@@ -35,7 +36,7 @@
   }
 
   &.active {
-    color: $breadcrumb-active-color;
+    color: inherit;
   }
 
   a {

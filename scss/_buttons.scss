@@ -97,6 +97,9 @@ fieldset[disabled] a.btn {
 .btn-outline-danger {
   @include button-outline-variant($btn-danger-bg);
 }
+.btn-outline-inverse {
+  @include button-outline-variant($white);
+}
 
 
 //
