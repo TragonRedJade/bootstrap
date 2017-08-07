@@ -2820,8 +2820,8 @@ fieldset[disabled] a.btn {
 
 .btn-inverse {
   color: #fff;
-  background-color: #7f7f7f;
-  border-color: #7f7f7f;
+  background-color: #333239;
+  border-color: #333239;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
